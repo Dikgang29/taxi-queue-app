@@ -4,6 +4,7 @@ function TaxiQueue() {
 	let queueCounter = 0;
 
 	let taxiQueueCounter = 0;
+	// let fullTaxi = 12;
 	function joinQueue() {
 
 		queueCounter++;
@@ -35,18 +36,21 @@ function TaxiQueue() {
 
 	function taxiDepart(){
 
-		if(taxiQueueCounter>0){
-		if(queueCounter>=12){
-			queueCounter= queueCounter- 12;
+		if(taxiQueueLength()){
+		if(queueLength()>=12){
+			queueCounter= queueCounter - 12;
 			// if(taxiQueueCounter>0){
 			// taxiQueueCounter--;
 			// }
+			
+			
 			taxiQueueCounter--;
 
-
 		}
+	
 		} 
-		return taxiQueueLength();
+		
+		
 
 
 	}
