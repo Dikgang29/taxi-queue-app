@@ -47,6 +47,10 @@ taxiQueueBtn.addEventListener('click', function(){
 departBtn.addEventListener('click', function(){
     // taxiQueue.taxiQueueLength()
     taxiQueue.taxiDepart();
-    // taxiCount.innerHTML = taxiQueue.taxiQueueLength;
+    // taxiCount.innerHTML ;
+    passengersCounter.innerHTML = taxiQueue.queueLength();
+    taxiCount.innerHTML = taxiQueue.taxiQueueLength();
+
+
     
 });
